@@ -4,6 +4,7 @@ module Slowhandcuke
     def before_step( step )
       @io.printf '... %s', step.name
       @io.flush
+      super
     end
 
     def before_step_result( *args )
